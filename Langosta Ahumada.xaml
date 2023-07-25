@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.Langosta_Ahumada"
+             Title="Langosta_Ahumada">
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+                Source="lan.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <StackLayout>
+            <Label Text="Número de Personas:" />
+            <Entry x:Name="txtNumeroPersonas" Keyboard="Numeric" />
+
+            <Label Text="Presupuesto Total:" />
+            <Label x:Name="lblPresupuestoTotal" />
+
+            <Button Text="Calcular" Clicked="CalcularClicked" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

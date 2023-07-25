@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.Nosotros"
+             Title="Nosotros"
+             BackgroundColor="Black">
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Purple"/>
+                <GradientStop Offset="1" Color="DeepPink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*">
+        <Border HeightRequest="200" WidthRequest="200" 
+                Stroke="{StaticResource gradient}"
+                StrokeThickness="15">
+            <Image Source="colocho.jpg" />
+
+        </Border>
+        <Border
+            Grid.Column="1"
+            HeightRequest="200" WidthRequest="200" 
+                Stroke="{StaticResource gradient}"
+                StrokeThickness="15">
+            <Image Source="nico.jpg" />
+        </Border>
+        <Border
+            Grid.Row="1"
+            HeightRequest="200" WidthRequest="200" 
+                Stroke="{StaticResource gradient}"
+                StrokeThickness="15">
+            <Image Source="china.jpg" />
+
+        </Border>
+        <Border
+            Grid.Row="1"
+            Grid.Column="1"
+            
+            HeightRequest="200" WidthRequest="200" 
+                Stroke="{StaticResource gradient}"
+                StrokeThickness="15">
+            <Image Source="caceres.jpg" />
+
+        </Border>
+        <Border
+            
+            Grid.Row="2"
+           
+            HeightRequest="200" WidthRequest="200" 
+                Stroke="{StaticResource gradient}"
+                StrokeThickness="15">
+            <Image Source="kate.jpg" />
+            
+        </Border>
+       
+
+    </Grid>
+        
+        
+   
+   
+</ContentPage>

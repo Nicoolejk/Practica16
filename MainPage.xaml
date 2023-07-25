@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="apk.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Button Text="Cuenta Regresiva" x:Name="Cuenta" Clicked="Cuenta_Clicked" />
+            <Button Text="Numeros Pares" x:Name="Numeros" Clicked="Numeros_Clicked" />
+            <Button Text="Tabla Multiplicar" x:Name="Tabla" Clicked="Tabla_Clicked" />
+            <Button Text="Langosta Ahumada" x:Name="Langosta" Clicked="Langosta_Clicked" />
+            <Button Text="Sueldo Semanal" x:Name="Sueldo" Clicked="Sueldo_Clicked" />
+            <Button Text="Empresa" x:Name="Empresa" Clicked="Empresa_Clicked" />
+            <Button Text="Nosotros" x:Name="Nosotros" Clicked="Nosotros_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

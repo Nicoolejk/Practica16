@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.Sueldo_Semanal"
+             Title="Sueldo_Semanal">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+                Source="dineroo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <StackLayout Margin="20">
+            <Label Text="Horas trabajadas:" />
+            <Entry x:Name="entryHorasTrabajadas" Keyboard="Numeric" />
+
+            <Label Text="Pago por hora:" />
+            <Entry x:Name="entryPagoPorHora" Keyboard="Numeric" />
+
+            <Button Text="Calcular" Clicked="ButtonCalcular_Clicked" />
+
+            <Label Text="Sueldo semanal:" />
+            <Label x:Name="labelSueldoSemanal" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

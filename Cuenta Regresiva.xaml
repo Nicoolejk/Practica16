@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.Cuenta_Regresiva"
+             Title="Cuenta_Regresiva">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+                Source="cuentaa.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+        <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+            <Label x:Name="countdownLabel"
+               FontSize="48"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+            <Button x:Name="startButton"
+                Text="Comenzar cuenta regresiva"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+            <Button x:Name="resetButton"
+                Text="Reiniciar"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

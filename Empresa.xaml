@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicaciones.Empresa"
+             Title="Empresa">
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+                Source="divi.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <StackLayout>
+            <Label Text="Cantidad en Pesos Mexicanos:" />
+            <Entry x:Name="txtCantidad" Keyboard="Numeric" />
+
+            <Label Text="Cantidad en Dólares:" />
+            <Label x:Name="lblCantidadDolares" />
+
+            <Button Text="Convertir" Clicked="ConvertirClicked" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
